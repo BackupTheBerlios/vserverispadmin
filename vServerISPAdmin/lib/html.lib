@@ -1,0 +1,134 @@
+<?php
+/*
+ * vServerISPAdmin - ISP style administration for vServers
+ * Copyright (C) 2004 Christoph Mertins <c.mertins@gmx.net>
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+*/
+
+function htmltop()
+{
+    print "<html>";
+        print "<head>";
+	    print "<title>VServerAdmin</title>";
+?>
+  	<style>
+		body {
+			border:0;
+			margin:10pt;
+		}
+		body,td,th,input,p,.std,.text {
+			font-family:verdana,arial,helvetica,sans-serif,iso8859;
+			font-size:8pt;
+			text-decoration:none;
+			color:000000;
+		}
+		h1 {
+			font-family:verdana,arial,helvetica,sans-serif,iso8859;
+			font-size:13pt;
+			font-weight:bold;
+			text-decoration:none;
+			color:000000;
+			margin-bottom:16px;
+		}
+		.topmenulink {
+			font-family:verdana,arial,helvetica,sans-serif,iso8859;
+			font-size:8pt;
+			font-weight:normal;
+			text-decoration:none;
+			color:ffffff;
+		}
+		.menulink {
+			font-family:verdana,arial,helvetica,sans-serif,iso8859;
+			font-size:8pt;
+			font-weight:normal;
+			text-decoration:none;
+			color:000088;
+		}		
+		td.menulink {
+			color:999999;
+		}
+		
+		th {
+			font-family:verdana,arial,helvetica,sans-serif,iso8859;
+			font-size:8pt;
+			font-weight:bold;
+			text-decoration:none;
+			background-color: #283054;
+			color:#ffffff;
+	
+		}
+		
+		h1,p {
+			margin:16px;
+		}
+		li {
+			list-style-type: square;
+		}
+	</style>
+
+
+<?php
+        print "</head>";	
+
+        print "<body topmargin=\"0\" leftmargin=\"0\">";
+
+?>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+	<td>
+		<table cellspacing="0" cellpadding="0" border="0" bgcolor="#283054" valign="top" width="100%">
+		<tr>
+			<td width="100%" valign="bottom">
+
+				<table cellspacing="0" cellpadding="10" border="0"><tr><td class="menulink">
+		        	<a class="topmenulink" href="index.php">Home</a>
+
+				</td></tr></table>
+			</td>
+			<td valign="top" align="right" height=80>
+			    <a href="http://www.scheller.intern"><img border="0" src="images/sstlogo.gif" alt="SST"></a>
+			</td>
+			<td valign="top" width=0>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+			</td>
+		</tr>
+
+		</table>
+	</td>
+	</tr>
+    </table>
+    <br />
+<?php
+	
+	    print "<table width=\"100%\">";
+		print "<tr>";
+		    print "<td valign=\"top\">";
+		    	print "<a class=\"menulink\" href=\"newvserver.php\">New VServer</a><br />";
+			print "<a class=\"menulink\" href=\"listvservers.php\">List VServers</a>";
+		    print "</td>";
+		    print "<td>";
+
+}
+
+function htmlbottom()
+{
+	    print "</td>";		    
+        print "</tr>";	    
+    print "</table>";
+
+}
+
+?>

@@ -1,0 +1,5 @@
+#
+# allow apache to exec the stat script
+#
+%apache ALL=(ALL)       NOPASSWD: /usr/sbin/vserver-stat
+%apache ALL=(ALL)       NOPASSWD: /var/www/localhost/htdocs/vserver/scripts/newvserver.php
